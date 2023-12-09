@@ -1,0 +1,84 @@
+body
+{
+    background-color: #edddd4;
+}
+
+h1
+{
+    text-align: center;
+}
+
+h1,h2,h3,p,button
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+
+hr
+{
+    background-color: black;
+    width: 95%;
+}
+
+table img
+{
+    border-radius: 10px;
+}
+
+#maintitle
+{
+    font-size: 40px;
+}
+
+.table
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+.center
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.portrait
+{
+    border: 3px;
+    border-style: groove;
+    border-color: #f2e9e4;
+}
+
+.arrow
+{
+    width: 50px;
+    height: 50px;
+}
+
+.menu
+{
+    background-color: #505c68;
+}
+
+.copyright
+{
+    background-color: #505c68;
+    font-size: small;
+    color: white;
+}
+
+button
+{
+    background-color: #edddd4;
+    color:black;
+    padding: 15px 25px;
+    border: 2px solid black;  
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+  
+button:hover
+{
+    background-color: #e1c6b7;
+}

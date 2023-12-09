@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My portfolio</title>
+    <style>
+        b,em
+        {
+            color:#9d8189;
+        }
+    </style>
+</head>
+<body>
+    <h1>Portfolio Gallery</h1>
+    <p style="text-align: right;"><a href="#endpage">Jump to Bottom</a></p>   
+    <div class="menu">
+        <br>
+        <p style="text-align: center;">
+        <button type="button" id="art2d" onclick="loadPage(this.id)">2D Art</button>
+        <button type="button" id="art3d" onclick="loadPage(this.id)">3D Art</button>
+        <button type="button" id="coding" onclick="loadPage(this.id)">Coding</button>
+        <button type="button" id="photography" onclick="loadPage(this.id)">Photography</button>
+        </p>
+        <br>
+    </div>
+    <br>
+    <table class="table">
+        <tr>
+            <td><img src="images/portgallery1.png" alt="Blender art" style="width:450px;height:650px;"></td>
+            <td><img src="images/portgallery2.png" alt="Pixel art" style="width:450px;height:650px;"></td>
+            <td><img src="images/portgallery3.png" alt="Blender art" style="width:450px;height:650px;"></td>
+        </tr>
+        <tr>
+            <td><img src="images/portgallery4.png" alt="Pixel art" style="width:450px;height:650px;"></td>
+            <td><img src="images/portgallery5.png" alt="Blender art" style="width:450px;height:650px;"></td>
+            <td><img src="images/portgallery6.png" alt="Pixel art" style="width:450px;height:650px;"></td>
+        </tr>
+        <tr>
+            <td><img src="images/portgallery7.png" alt="Blender art" style="width:450px;height:650px;"></td>
+            <td><img src="images/portgallery8.png" alt="Pixel art" style="width:450px;height:650px;"></td>
+            <td><img src="images/portgallery9.png" alt="Blender art" style="width:450px;height:650px;"></td>
+        </tr>
+    </table>
+    <hr>
+    <blockquote id="endpage">
+        "If you always put limits on everything you do, physical or anything else. It will spread into your work and into your life. There are no limits. There are only plateaus, and you must not stay there, you must go beyond."
+        <br>
+        -Bruce Lee
+    </blockquote>
+    <br>
+    <br>
+    <a href="index.html"><img src="images/return.png" alt="Return to main page" class="arrow"></a>
+
+    <script>
+        function loadPage(buttonId)
+        {
+            if (buttonId == "art2d")
+            {
+                window.location.href = "art2d.html";
+            }
+            else if (buttonId == "art3d")
+            {
+                window.location.href = "art3d.html";
+            }
+            else if (buttonId == "coding")
+            {
+                window.location.href = "coding.html";
+            }
+            else if (buttonId == "photography")
+            {
+                window.location.href = "photography.html";
+            }
+        }
+    </script>
+</body>
+</html>

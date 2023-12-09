@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ana Paula Piñón Pagaza</title> 
+    <style>
+        b,em
+        {
+            color:#9d8189;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <br>
+        <p style="text-align: center;">
+        <button type="button" id="aboutMe" onclick="loadPage(this.id)">About me</button>
+        <button type="button" id="myPortfolio" onclick="loadPage(this.id)">My portfolio</button>
+        <button type="button" id="learnCoding" onclick="loadPage(this.id)">Learn coding</button>
+        </p>
+        <br>
+    </div>
+    <h1 id="maintitle">Nice to meet you!</h1>
+    <p style="text-align: center;"><b>Hello!</b> My name is Ana Paula Piñón Pagaza and I was born in Mexico on April 7th 2003. I am currently enrolled at St. Lawrence College to become a video game programmer. I am fairly new to coding, but I am excited to learn as much as I can. I will continue to update this website as I progress. So come and join me as I go through my journey.</p>
+    <hr>
+    <h3>Remember to take a break</h3>
+    <img src="images/coffee_break.jpg" alt="Coffee Break" usemap="#coffeebreak" width="500" height="630" class="center portrait">
+
+    <map name="coffeebreak">
+        <area shape="rect" coords="200,20,700,300" href="candles.html" alt="Candles">
+        <area shape="rect" coords="300,360,600,700" href="coffee.html" alt="Coffee">
+        <area shape="rect" coords="0,300,300,700" href="book.html" alt="Book">
+    </map>
+    <p style="text-align: center;">
+    <q>Sometimes the most productive thing you can do is <em>relax</em>.</q>
+    </p>
+    <div class="copyright">
+        <br>
+        <p style="text-align: center;">Copyright 2023-2024</p>
+        <br>
+    </div>
+    
+    <script>
+        function loadPage(buttonId)
+        {
+            if (buttonId == "aboutMe")
+            {
+                window.location.href = "aboutme.html";
+            }
+            else if (buttonId == "myPortfolio")
+            {
+                window.location.href = "portfolio.html";
+            }
+            else if (buttonId == "learnCoding")
+            {
+                window.location.href = "resources.html";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Coding</title>
+    <style>
+        b,em
+        {
+            color:#9d8189;
+        }
+        table
+        {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .clear
+        {
+            border: 1px solid #edafb8;
+            width: 100%;
+            display: inline-block;
+            font-size: 25px; 
+            background-color:#edafb8;
+            color: white;
+        }
+        
+        .clear:hover
+        {
+            background-color: #ff8fab
+        }
+
+        .button
+        {
+            border: 1px solid #edafb8;
+            width: 20%;
+            display: inline-block;
+            font-size: 25px; 
+            background-color: white;
+        }
+
+        .button:hover
+        {
+            background-color: #ff8fab;
+            color: white;
+        }
+
+        #algebra
+        {
+            margin: 10px;
+            height: 20px;
+            font-size: 15px;
+            width: 85%;
+            border: 2px solid #edafb8;
+        }
+    </style>
+</head>
+<body>
+    <h1>Coding</h1>
+    <p style="text-align: right;"><a href="#endpage">Jump to Bottom</a></p>
+    <h3>Java Script</h3>
+    <p style="text-align: center;">Try the calculator!</p>
+    <table>
+        <tr>
+            <td><input type="text" name="algebra" value="" id="algebra"></td>
+            <td><button type="button" name="button" class="clear" onclick="reset()"> Clear </button></td>
+        </tr>
+        <tr>
+            <td style="text-align:center">
+                <button type="button" name="button" class="button" onclick="update('7')"> 7 </button>
+                <button type="button" name="button" class="button" onclick="update('8')"> 8 </button>
+                <button type="button" name="button" class="button" onclick="update('9')"> 9 </button>
+                <button type="button" name="button" class="button" onclick="update('/')"> / </button>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:center">
+                <button type="button" name="button" class="button" onclick="update('4')"> 4 </button>
+                <button type="button" name="button" class="button" onclick="update('5')"> 5 </button>
+                <button type="button" name="button" class="button" onclick="update('6')"> 6 </button>
+                <button type="button" name="button" class="button" onclick="update('*')"> * </button>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:center">
+                <button type="button" name="button" class="button" onclick="update('1')"> 1 </button>
+                <button type="button" name="button" class="button" onclick="update('2')"> 2 </button>
+                <button type="button" name="button" class="button" onclick="update('3')"> 3 </button>
+                <button type="button" name="button" class="button" onclick="update('-')"> - </button>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:center">
+                <button type="button" name="button" class="button" onclick="update('0')"> 0 </button>
+                <button type="button" name="button" class="button" onclick="update('.')"> . </button>
+                <button type="button" name="button" class="button" onclick="calculate()"> = </button>
+                <button type="button" name="button" class="button" onclick="update('+')"> + </button>
+            </td>
+        </tr>
+    </table>
+ <script>
+    function update(symbol)
+    {
+        document.getElementById('algebra').value += symbol;
+    }
+
+    function calculate()
+    {
+        var algebra = document.getElementById('algebra').value;
+        var result = Function("return " + algebra)();
+        var func = new Function(result);
+        document.getElementById('algebra').value = result;
+    }
+
+    function reset()
+    {
+        document.getElementById('algebra').value = " ";
+    }
+ </script>
+    <br>
+    <br id="endpage">
+    <a href="portfolio.html"><img src="images/return.png" alt="Return to main page" class="arrow"></a>
+</body>
+</html>
